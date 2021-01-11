@@ -15,7 +15,7 @@ pipeline {
             trackingSubmodules: true]],
           submoduleCfg: [],
           userRemoteConfigs: [[
-            url: 'https://github.com/jonasjj/Jenkins-demo-seg7']]])
+            url: 'https://github.com/xilink-vivado/example2']]])
       sh 'cd vivado && vivado -mode batch -source create_vivado_proj.tcl'
       }
     }
