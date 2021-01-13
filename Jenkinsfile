@@ -16,6 +16,7 @@ pipeline {
           submoduleCfg: [],
           userRemoteConfigs: [[
             url: 'https://github.com/xilink-vivado/example2']]])
+      sh 'git submodule update --init --recursive'
       sh 'cd vivado && vivado -mode batch -source create_vivado_proj.tcl'
       }
     }
